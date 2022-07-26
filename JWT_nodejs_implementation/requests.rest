@@ -1,0 +1,29 @@
+#VS code download rest client
+
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS3lsZSIsImlhdCI6MTY1ODg0Njc4NiwiZXhwIjoxNjU4ODQ2ODAxfQ.UP7jSdd656DRpCRSj-cVfmEXKFWUO-un1brX12eQe-Q
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNjU4ODQ4NjQzfQ.kGi0bKOig3vMCnwFnNLpAWUNeArD1xNWsQjvpg87TtQ"
+}
+
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNjU4ODQ4NjQzfQ.kGi0bKOig3vMCnwFnNLpAWUNeArD1xNWsQjvpg87TtQ"
+}
+
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Jim"
+}
